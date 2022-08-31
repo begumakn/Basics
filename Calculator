@@ -1,0 +1,47 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+            int numberOne;
+			int numberTwo;
+			double sonuc;
+			string islem;
+			Console.WriteLine("Sayi girin.");
+			numberOne = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Ikinci Sayiyi Girin.");
+			numberTwo = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Islemlerden birini secin. \n (+,-,/,*)");
+			islem = Console.ReadLine();
+
+			if (islem != "*" && islem != "*" && islem != "+" && islem != "/" && islem != "-")
+			{
+				Console.WriteLine("Gecersiz Secim."); 
+			}
+
+			if (islem == "*")
+			{
+				sonuc = numberOne * numberTwo;
+				Console.WriteLine("Sonuc: " + sonuc);
+			}
+
+			if (islem == "/")
+			{
+				sonuc = numberOne / numberTwo;
+				Console.WriteLine("Sonuc: " + sonuc);
+			}
+			if (islem == "+")
+			{
+				sonuc = numberOne + numberTwo;
+				Console.WriteLine("Sonuc: " + sonuc);
+			}
+			if (islem == "-")
+			{
+				sonuc = numberOne - numberTwo;
+				Console.WriteLine("Sonuc: " + sonuc);
+			}
+    }
+}
